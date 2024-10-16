@@ -1,0 +1,370 @@
+@media screen and (min-width: 768px) {
+  body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    margin: 0;
+  }
+  
+  /* header.php */
+  .nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #F6AD3C;
+    padding: 10px;
+  }
+  
+  .title {
+    margin: 0;
+  }
+
+  .title-link,
+  .register-link,
+  .view-link {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+
+  .title-link:hover,
+  .register-link:hover,
+  .log-link:hover,
+  .view-link:hover {
+    color: #CE749C;
+    text-decoration: none;
+  }
+
+  .register-block {
+    display: flex;
+    position: relative; /* toastで隠れてしまうため */
+    z-index: 1000; /* toastで隠れてしまうため */
+    margin-right: 50px;
+  }
+
+  .log-link,
+  .view-link {
+    background-color: #F6AD3C;
+    border: none;
+    color: white;
+  }
+
+  /* account.php */
+  .account-form-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height: 85vh;
+    background-color: #f0f4f8;
+  }
+  
+  .account-form {
+    background-color: white;
+    border-radius: 10px;
+    padding: 32px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 700px;
+  }
+  
+  .account-form h3 {
+    color: #007bff;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+  
+  .account-form label span{
+    font-size: 14px;
+    color: red;
+  }
+  
+  #email, #password {
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 15px;
+  }
+
+  .account-form input[type="checkbox"] {
+      margin-left: 20px;
+      transform: scale(1.5);
+  }
+  
+  .btn-primary {
+    display: block;
+    margin: 0 auto;
+    width: 100px;
+  }
+
+  .btn-primary:hover {
+    background-color: #3399ff;
+  }
+
+  .unregist {
+    text-align: center;
+    margin-top: 50px;
+  }
+
+  .creation {
+    color: #EF845C;
+  }
+
+  .login-back {
+    margin-top: 30px;
+    color: #EF845C;
+  }
+
+  /* regist.php */
+  .regist-form-container {
+    margin-top: 40px;
+    padding-bottom: 60px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .regist-form {
+    display: flex;
+    flex-direction: column;
+    width: 700px;
+    background-color: #FFF;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    border-radius: 8px;
+  }
+
+  .regist-form label {
+    margin-bottom: 5px;
+  }
+
+  .regist-form input {
+    margin-bottom: 15px;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+
+  .regist-form h3 {
+    text-align: center;
+  }
+  
+  /* footer.php */
+  footer {
+    /* position: relative;
+    bottom: 0; */
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #F6AD3C;
+    margin-top: 20px;
+    padding: 15px 20px;
+    color: #ecf0f1;
+    font-size: 14px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .copyright {
+    margin: 0 auto;
+  }
+
+  /* confirmation.php */
+  /* メッセージ */
+  .confirm-p {
+    font-size: 16px;
+    color: #E60012;
+    margin: 16px auto;
+  }
+
+  #con-post:focus,
+  #con-pref:focus,
+  #con-city:focus,
+  #con-block:focus,
+  #con-building:focus,
+  #con-tel:focus,
+  #con-name:focus,
+  #con-email:focus
+  {
+    outline:0;
+  }
+
+  .confir-btn-container {
+    display: flex;
+  }
+
+  .confir-btn-container button {
+    width: 150px;
+    margin: 0;
+  }
+
+  /* compleete.php */
+  .complete-msg {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+  }
+  
+  .complete-msg p {
+    font-size: 24px;
+    color: #6b4e31;
+    margin-bottom: 40px;
+  }
+
+  .comp-btn {
+    width: 150px;
+    margin: 0;
+  }
+
+  /* select.php */
+  .search-area {
+    padding: 15px 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+  }
+  
+  .search-area input[type="text"],
+  .search-area button {
+    display: inline-block;
+    width: 300px;
+    height: 40px;
+    padding: 8px;
+    font-size: 16px;
+}
+
+  .search-area button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    vertical-align: initial;
+    width: 80px;
+  }
+
+  .search-area button:hover {
+    background-color: #3399ff;
+  }
+
+  /* toast */
+  .toast-btn {
+    height: 100px;
+    width: 300px;
+  }
+
+  .btn-container {
+    margin-top: 10px;
+  }
+
+  .toast-msg {
+    font-size: 18px;
+    color: #EF858C;
+  }
+
+  .btn-container button {
+    width: 110px;
+  }
+
+  .select-list {
+    padding: 20px 20px 60px 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+  }
+
+  .addresses-table {
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 100px;
+  }
+
+  .addresses-table th, .addresses-table td {
+    padding: 12px;
+    border-bottom: 1px solid #ddd;
+  }
+
+  /* table ヘッダーのスタイル */
+  .addresses-table th {
+    color: #53A8A6;
+    border-bottom: 2px solid #f4a460;
+    font-weight: bold;
+  }
+
+  .addresses-table tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+
+  .addresses-table tr:hover {
+    background-color: #e0e0e0;
+  }
+
+  .addresses-table td {
+    font-size: 14px;
+    color: #333;
+  }
+
+  .center {
+    text-align: center;
+  }
+
+  .edit-icon,
+  .delete-icon {
+    cursor: pointer;
+    height: 20px;
+    vertical-align: top;
+  }
+
+  .delete-icon {
+    height: 20px;
+    vertical-align: top;
+  }
+  
+  .icon {
+    text-align: center;
+  }
+
+  .edit-icon:hover,
+  .delete-icon:hover {
+    transform: translateY(-3px);
+  }
+
+  /* update.php */
+  .btn-box {
+    display: flex;
+    justify-content: left;
+  }
+
+  #confirmBtn {
+    margin-left: 50px;
+  }
+
+  .position-fixed {
+    top: 100px;
+    right: 0;
+  }
+
+  .toast {
+      background-color: #EFEFEF;
+      color: #8FC31F;
+      border-radius: 5px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+
+  .toast-header {
+      background-color: #3399ff;
+      color: #fff;
+  }
+
+  .toast-up-masg {
+      font-weight: bold;
+      font-size: 18px;
+      height: 100px;
+      display: flex;
+      align-items: center;
+      
+  }
+
+  .close {
+      color: #fff;
+  }
+
+}  
